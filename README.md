@@ -50,7 +50,8 @@
 
 ```bash
 g++ -std=c++17 -O2 points-in-circle.cpp -o points-in-circle
-./points-in-circle```
+./points-in-circle
+```
 
 ## Автор
 **Фомин Константин Александрович**
