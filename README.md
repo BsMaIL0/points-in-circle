@@ -68,7 +68,8 @@ g++ -std=c++17 -O2 points-in-circle.cpp -o points-in-circle
 
 ## 📁 Структура проекта
 
-```├── points-in-circle.cpp // решение задачи
+```
+├── points-in-circle.cpp // решение задачи
 └── README.md // этот файл
 ```
 
