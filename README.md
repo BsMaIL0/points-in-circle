@@ -56,6 +56,9 @@ g++ -std=c++17 -O2 points-in-circle.cpp -o points-in-circle
 ## Автор
 
 **Фомин Константин Александрович**
+
 [GitHub](https://github.com/BsMaIL0) | [Codewars](https://www.codewars.com/users/BsMaIL)
+
 Студент 2 курса СПбГУ, факультет прикладной математики — процессов управления
+
 Проект выполнен в рамках курса «Основы программирования», 2024 г.
