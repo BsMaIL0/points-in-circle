@@ -1,5 +1,7 @@
 # ⭕ Точки в окружности
 
+[![CI](https://github.com/BsMaIL0/points-in-circle/actions/workflows/ci.yml/badge.svg)](https://github.com/BsMaIL0/points-in-circle/actions/workflows/ci.yml)
+
 Дана окружность с целочисленным радиусом. Необходимо посчитать количество точек с целочисленными координатами, лежащих внутри или на границе окружности.
 
 ## 📥 Входные данные
@@ -69,8 +71,20 @@ g++ -std=c++17 -O2 points-in-circle.cpp -o points-in-circle
 ## 📁 Структура проекта
 
 ```
-├── points-in-circle.cpp // решение задачи
-└── README.md // этот файл
+├── .github/workflows/
+│   └── ci.yml                # CI настройка
+├── include/
+│   └── point_counter.h       # заголовочный файл
+├── src/
+│   ├── main.cpp              # точка входа
+│   └── point_counter.cpp     # реализация алгоритма
+├── tests/
+│   ├── CMakeLists.txt
+│   └── test_point_counter.cpp # тесты (Google Test)
+├── CMakeLists.txt
+├── .clang-format
+├── .clang-tidy
+└── README.md
 ```
 
 
