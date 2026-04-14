@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+project(PointsInCircle)
+
+set(CMAKE_CXX_STANDARD 17)
+
+file(GLOB SOURCES "src/*.cpp")
+file(GLOB HEADERS "include/*.h")
+
+add_executable(PointsInCircle ${SOURCES} ${HEADERS})
+
+target_include_directories(PointsInCircle PRIVATE include)
