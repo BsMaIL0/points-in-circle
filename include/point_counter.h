@@ -5,4 +5,4 @@
 
 std::uint64_t countPointsInCircle(std::uint64_t radius) noexcept;
 
-#endif // !POINT_COUNTER_H
+#endif  // !POINT_COUNTER_H

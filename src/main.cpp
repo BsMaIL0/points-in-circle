@@ -1,5 +1,6 @@
-#include <iostream>
 #include <cstdint>
+#include <iostream>
+
 #include "point_counter.h"
 
 int main() {
@@ -7,10 +8,10 @@ int main() {
   std::cin >> R;
 
   if (R == 0) {
-    std::cout << 1 << std::endl;
+    std::cout << 1 << '\n';
     return 0;
   }
 
-  std::cout << countPointsInCircle(R) << std::endl;
+  std::cout << countPointsInCircle(R) << '\n';
   return 0;
 }

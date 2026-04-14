@@ -19,7 +19,7 @@ std::string runProgramWithInput(const std::string& input) {
   std::cin.rdbuf(input_stream.rdbuf());
   std::cout.rdbuf(output_stream.rdbuf());
 
-  std::uint64_t R; 
+  std::uint64_t R;
   std::cin >> R;
   std::cout << countPointsInCircle(R) << std::endl;
 
