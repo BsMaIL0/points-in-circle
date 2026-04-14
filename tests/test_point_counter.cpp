@@ -116,6 +116,13 @@ TEST(CorrectnessTest, Test11_Radius1999999999) {
   EXPECT_EQ(output, "12566370601792670609");
 }
 
+TEST(EdgeCasesTest, MaxRadius) {
+  constexpr std::uint64_t MAX_R = 1'999'999'999;
+  constexpr std::uint64_t EXPECTED = 12'566'370'601'792'670'609ULL;
+  auto result = countPointsInCircle(MAX_R);
+  EXPECT_EQ(result, EXPECTED) << "Failed for max radius = " << MAX_R;
+}
+
 TEST(PerformanceTest, TimeTest_Radius1e6) {
   double elapsed = measureTime([]() { countPointsInCircle(1000000); });
   std::cout << "Radius 1,000,000 - Elapsed time: " << elapsed << " sec"
