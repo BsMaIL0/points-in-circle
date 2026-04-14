@@ -14,6 +14,8 @@ target_include_directories(PointsInCircle PRIVATE include)
 option(BUILD_TESTS "Build tests" ON)
 
 if(BUILD_TESTS)
+    enable_testing()
+
     include(FetchContent)
     FetchContent_Declare(
         googletest
